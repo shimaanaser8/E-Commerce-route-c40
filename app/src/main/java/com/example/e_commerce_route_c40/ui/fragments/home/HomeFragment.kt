@@ -16,5 +16,29 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         container: ViewGroup?
     )=FragmentHomeBinding.inflate(inflater,container,false)
 
+    private fun onClicks() {
+        binding.apply {
+            etSearch.setOnClickListener {
+                // Handle search button click
+            }
+            btnCart.setOnClickListener {
+                // action to cart fragment
+            }
+            rvOffers.setOnClickListener {
+                // action to specific fragment
+            }
+            tvViewAllCategories.setOnClickListener {
+                // action to all categories fragment
 
+            }
+            rvCategories.setOnClickListener {
+                // action to specific category fragment
+            }
+            rvHomeAppliance.setOnClickListener {
+                // action to specific appliance fragment
+            }
+
+        }
+
+    }
 }
