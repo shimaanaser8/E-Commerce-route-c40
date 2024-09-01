@@ -3,4 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="profile">profile</string>
+    <string name="categories">Categories</string>
+    <string name="viewAll">View all</string>
+    <string name="home_appliance">Home Appliance</string>
+    <string name="review">Review</string>
+    <string name="egp">EGP</string>
+    <string name="search_hint">What do you search for?</string>
 </resources>
