@@ -3,6 +3,7 @@
     <style name="Base.Theme.ECommerceroutec40" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="fontFamily">@font/myfont</item>
         <item name="colorPrimaryVariant">@color/main_color</item>
         <item name="colorPrimary">@color/main_color</item>
         <item name="bottomNavigationStyle">@style/bottom_navigation</item>
