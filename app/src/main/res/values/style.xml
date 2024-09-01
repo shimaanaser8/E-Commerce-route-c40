@@ -2,8 +2,10 @@
 <resources>
 
     <style name="inputLayoutStyle">
-        <item name="android:layout_width">@dimen/_260sdp</item>
-        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintWidth_percent">0.85</item>
+        <item name="layout_constraintHeight_percent">0.06</item>
         <item name="boxCornerRadiusTopEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusBottomEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusTopStart">@dimen/_20sdp</item>
@@ -19,8 +21,9 @@
     // item category style
 
     <style name="iv_category_style">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintHeight_percent">0.60</item>
     </style>
 
     <style name="tv_category_style">
@@ -40,8 +43,10 @@
     //item home appliance style
     <style name="cv_home_appliance_style">
         <item name="cardCornerRadius">@dimen/_10sdp</item>
-        <item name="android:layout_width">158dp</item>
-        <item name="android:layout_height">211dp</item>
+        158dp
+        211dp
+        <item name="android:layout_width">@dimen/_110sdp</item>
+        <item name="android:layout_height">@dimen/_165sdp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginEnd">@dimen/_20sdp</item>
         <item name="fontFamily">@font/myfont</item>
@@ -84,8 +89,8 @@
     //item home appliance style
     <style name="cv_offers_style">
         <item name="cardCornerRadius">@dimen/_10sdp</item>
-        <item name="android:layout_width">400dp</item>
-        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_width">@dimen/_290sdp</item>
+        <item name="android:layout_height">@dimen/_155sdp</item>
         <item name="android:gravity">center</item>
         <item name="fontFamily">@font/myfont</item>
         <item name="strokeColor">#B3C4D2</item>
