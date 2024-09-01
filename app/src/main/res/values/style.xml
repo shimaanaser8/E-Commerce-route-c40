@@ -3,9 +3,8 @@
 
     <style name="inputLayoutStyle">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
         <item name="layout_constraintWidth_percent">0.85</item>
-        <item name="layout_constraintHeight_percent">0.06</item>
         <item name="boxCornerRadiusTopEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusBottomEnd">@dimen/_20sdp</item>
         <item name="boxCornerRadiusTopStart">@dimen/_20sdp</item>
@@ -17,8 +16,6 @@
         <item name="android:textColorHint">@color/lite_color</item>
         <item name="android:layout_marginTop">@dimen/_10sdp</item>
     </style>
-
-    // item category style
 
     <style name="iv_category_style">
         <item name="android:layout_width">0dp</item>
@@ -40,11 +37,8 @@
         <item name="android:textColor">@color/main_tv_color</item>
     </style>
 
-    //item home appliance style
     <style name="cv_home_appliance_style">
         <item name="cardCornerRadius">@dimen/_10sdp</item>
-        158dp
-        211dp
         <item name="android:layout_width">@dimen/_110sdp</item>
         <item name="android:layout_height">@dimen/_165sdp</item>
         <item name="android:gravity">center</item>
@@ -85,8 +79,6 @@
         <item name="android:maxLength">26</item>
     </style>
 
-
-    //item home appliance style
     <style name="cv_offers_style">
         <item name="cardCornerRadius">@dimen/_10sdp</item>
         <item name="android:layout_width">@dimen/_290sdp</item>

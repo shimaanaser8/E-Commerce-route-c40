@@ -43,34 +43,29 @@
         app:layout_constraintBottom_toBottomOf="@id/til_search"
         app:layout_constraintTop_toTopOf="@id/til_search" />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_10sdp"
         android:scrollbars="none"
-        android:layout_marginTop="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_search"
-        android:layout_height="0dp">
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp">
 
-
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_offers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollbars="none"
-                app:spanCount="1"
-                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_offers"
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_155sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:listitem="@layout/item_offers" />
+                />
 
             <TextView
                 android:id="@+id/tv_categories"
@@ -81,7 +76,7 @@
                 android:textColor="@color/main_tv_color"
                 android:textSize="@dimen/_18sdp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/rv_offers" />
+                app:layout_constraintTop_toBottomOf="@id/vp_offers" />
 
             <TextView
                 android:id="@+id/tv_view_all_categories"
@@ -91,9 +86,8 @@
                 android:text="@string/viewAll"
                 android:textColor="@color/main_tv_color"
                 android:textSize="@dimen/_11sdp"
-                app:layout_constraintBottom_toBottomOf="@id/tv_categories"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/tv_categories" />
+                app:layout_constraintTop_toBottomOf="@id/vp_offers"
+                app:layout_constraintEnd_toEndOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_categories"
@@ -122,7 +116,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_home_appliance"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:orientation="horizontal"
                 android:scrollbars="none"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -132,5 +126,5 @@
                 tools:listitem="@layout/item_home_appliance" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

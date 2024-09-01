@@ -3,13 +3,10 @@ package com.example.e_commerce_route_c40.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.e_commerce_route_c40.databinding.ItemHomeApplianceBinding
-import com.example.easymeals.databinding.ItemFCategoryBinding
-import com.example.easymeals.pojo.Category
 
 class AdapterHomeAppliance: RecyclerView.Adapter<AdapterHomeAppliance.Holder>() {
-    var categoryList: List<Category>? = null
+//    var categoryList: List<Category>? = null
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -18,12 +15,12 @@ class AdapterHomeAppliance: RecyclerView.Adapter<AdapterHomeAppliance.Holder>() 
     }
 
     override fun getItemCount(): Int {
-        return categoryList?.size ?: 0
+        TODO()
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        val data = categoryList!![position]
-        holder.bind(data)
+//        val data = categoryList!![position]
+//        holder.bind(data)
     }
 
 
@@ -42,30 +39,27 @@ class AdapterHomeAppliance: RecyclerView.Adapter<AdapterHomeAppliance.Holder>() 
     inner class Holder(val binding: ItemHomeApplianceBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
             binding.ivProduct.setOnClickListener {
-                onProductClick.invoke(categoryList!![layoutPosition].*id*)
+//                onProductClick.invoke(categoryList!![layoutPosition].*id*)
             }
             binding.btnAddCart.setOnClickListener{
-                oncCartClick.invoke(categoryList!![layoutPosition].*id*)
+//                oncCartClick.invoke(categoryList!![layoutPosition].*id*)
 
             }
             binding.btnFavoriets.setOnClickListener{
-                onFavorietsClick.invoke(categoryList!![layoutPosition].*id*)
+//                onFavorietsClick.invoke(categoryList!![layoutPosition].*id*)
 
             }
         }
 
-        fun bind(applianceList : Appliance) {
-            binding.apply {
-                Glide.with(binding.root.context)
-                    .load(categoryList.strCategoryThumb)
-                    .into(ivProduct)
-                tvPrice.text = price
-
-            }
+        fun bind() {
+//            binding.apply {
+//                Glide.with(binding.root.context)
+//                    .load(categoryList.strCategoryThumb)
+//                    .into(ivProduct)
+//                tvPrice.text = price
+//
+//            }
 
         }
     }
-
-
-
 }
