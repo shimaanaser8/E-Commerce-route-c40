@@ -1,3 +1,4 @@
+/*
 package com.example.e_commerce_route_c40.adapters
 
 import android.view.LayoutInflater
@@ -23,7 +24,7 @@ class AdapterHomeAppliance: RecyclerView.Adapter<AdapterHomeAppliance.Holder>() 
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val data = categoryList!![position]
-        holder.bind(data)
+      //  holder.bind(data)
     }
 
 
@@ -42,30 +43,29 @@ class AdapterHomeAppliance: RecyclerView.Adapter<AdapterHomeAppliance.Holder>() 
     inner class Holder(val binding: ItemHomeApplianceBinding) : RecyclerView.ViewHolder(binding.root) {
         init {
             binding.ivProduct.setOnClickListener {
-                onProductClick.invoke(categoryList!![layoutPosition].*id*)
+                onProductClick.invoke(categoryList!![layoutPosition].id)
             }
             binding.btnAddCart.setOnClickListener{
-                oncCartClick.invoke(categoryList!![layoutPosition].*id*)
+                oncCartClick.invoke(categoryList!![layoutPosition].id)
 
             }
             binding.btnFavoriets.setOnClickListener{
-                onFavorietsClick.invoke(categoryList!![layoutPosition].*id*)
+                onFavorietsClick.invoke(categoryList!![layoutPosition].id)
 
             }
         }
 
-        fun bind(applianceList : Appliance) {
-            binding.apply {
-                Glide.with(binding.root.context)
-                    .load(categoryList.strCategoryThumb)
-                    .into(ivProduct)
-                tvPrice.text = price
-
-            }
-
-        }
+//        fun bind(applianceList : Appliance) {
+//            binding.apply {
+//                Glide.with(binding.root.context)
+//                    .load(categoryList.strCategoryThumb)
+//                    .into(ivProduct)
+//                tvPrice.text = price
+//
+//            }
+//
+//        }
     }
 
 
-
-}
+}*/
